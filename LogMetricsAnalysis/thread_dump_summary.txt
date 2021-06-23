@@ -1,0 +1,240 @@
+Thread name = RMI TCP Connection(6)-192.168.56.1
+prio=5
+tid=0x00000056b2968000
+Thread stack address = [0x00000056b3eae000]
+Thread id = #19
+Thread state = RUNNABLE
+Stack trace : 
+at java.net.SocketInputStream.socketRead0(Native Method)
+at java.net.SocketInputStream.socketRead(Unknown Source)
+at java.net.SocketInputStream.read(Unknown Source)
+at java.net.SocketInputStream.read(Unknown Source)
+at java.io.BufferedInputStream.fill(Unknown Source)
+at java.io.BufferedInputStream.read(Unknown Source)
+- locked <0x0000000080fc0b50> (a java.io.BufferedInputStream)
+at java.io.FilterInputStream.read(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$3/475005420.run(Unknown Source)
+at java.security.AccessController.doPrivileged(Native Method)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+================================================
+Thread name = RMI TCP Connection(5)-192.168.56.1
+prio=5
+tid=0x00000056b2900000
+Thread stack address = [0x00000056b3dae000]
+Thread id = #18
+Thread state = RUNNABLE
+Stack trace : 
+at java.net.SocketInputStream.socketRead0(Native Method)
+at java.net.SocketInputStream.socketRead(Unknown Source)
+at java.net.SocketInputStream.read(Unknown Source)
+at java.net.SocketInputStream.read(Unknown Source)
+at java.io.BufferedInputStream.fill(Unknown Source)
+at java.io.BufferedInputStream.read(Unknown Source)
+- locked <0x0000000080fc6ed0> (a java.io.BufferedInputStream)
+at java.io.FilterInputStream.read(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$3/475005420.run(Unknown Source)
+at java.security.AccessController.doPrivileged(Native Method)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+================================================
+Thread name = JMX server connection timeout 14
+prio=5
+tid=0x00000056b2a5c800
+Thread stack address = [0x00000056b39ae000]
+Thread id = #14
+Thread state = TIMED_WAITING (on object monitor)
+Stack trace : 
+at java.lang.Object.wait(Native Method)
+at com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(Unknown Source)
+- locked <0x0000000080f733c8> (a [I)
+at java.lang.Thread.run(Unknown Source)
+================================================
+Thread name = RMI Scheduler(0)
+prio=5
+tid=0x00000056b2a73800
+Thread stack address = [0x00000056b38af000]
+Thread id = #13
+Thread state = TIMED_WAITING (parking)
+Stack trace : 
+at sun.misc.Unsafe.park(Native Method)
+- parking to wait for  <0x0000000080f09668> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+at java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+================================================
+Thread name = RMI TCP Connection(1)-192.168.56.1
+prio=5
+tid=0x00000056b281e800
+Thread stack address = [0x00000056b2fac000]
+Thread id = #12
+Thread state = TIMED_WAITING (on object monitor)
+Stack trace : 
+at java.lang.Object.wait(Native Method)
+at com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(Unknown Source)
+- locked <0x0000000080fa0dc8> (a com.sun.jmx.remote.internal.ArrayNotificationBuffer)
+at com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(Unknown Source)
+at com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(Unknown Source)
+at javax.management.remote.rmi.RMIConnectionImpl$4.run(Unknown Source)
+at javax.management.remote.rmi.RMIConnectionImpl$4.run(Unknown Source)
+at javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(Unknown Source)
+at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at sun.rmi.server.UnicastServerRef.dispatch(Unknown Source)
+at sun.rmi.transport.Transport$1.run(Unknown Source)
+at sun.rmi.transport.Transport$1.run(Unknown Source)
+at java.security.AccessController.doPrivileged(Native Method)
+at sun.rmi.transport.Transport.serviceCall(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport.handleMessages(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler$$Lambda$3/475005420.run(Unknown Source)
+at java.security.AccessController.doPrivileged(Native Method)
+at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+================================================
+Thread name = RMI TCP Accept-0
+prio=5
+tid=0x00000056b1314800
+Thread stack address = [0x00000056b2eae000]
+Thread id = #11
+Thread state = RUNNABLE
+Stack trace : 
+at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+at java.net.DualStackPlainSocketImpl.socketAccept(Unknown Source)
+at java.net.AbstractPlainSocketImpl.accept(Unknown Source)
+at java.net.PlainSocketImpl.accept(Unknown Source)
+- locked <0x0000000080ec81a0> (a java.net.SocksSocketImpl)
+at java.net.ServerSocket.implAccept(Unknown Source)
+at java.net.ServerSocket.accept(Unknown Source)
+at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(Unknown Source)
+at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+================================================
+Thread name = Service Thread
+prio=9
+tid=0x00000056b129e000
+Thread stack address = [0x0000000000000000]
+Thread id = #9
+Thread state = RUNNABLE
+Stack trace : 
+================================================
+Thread name = C1 CompilerThread2
+prio=9
+tid=0x00000056b1215000
+Thread stack address = [0x0000000000000000]
+Thread id = #8
+Thread state = RUNNABLE
+Stack trace : 
+================================================
+Thread name = C2 CompilerThread1
+prio=9
+tid=0x00000056b1211800
+Thread stack address = [0x0000000000000000]
+Thread id = #7
+Thread state = RUNNABLE
+Stack trace : 
+================================================
+Thread name = C2 CompilerThread0
+prio=9
+tid=0x00000056b120e800
+Thread stack address = [0x0000000000000000]
+Thread id = #6
+Thread state = RUNNABLE
+Stack trace : 
+================================================
+Thread name = Attach Listener
+prio=5
+tid=0x00000056b120d800
+Thread stack address = [0x0000000000000000]
+Thread id = #5
+Thread state = RUNNABLE
+Stack trace : 
+================================================
+Thread name = Signal Dispatcher
+prio=9
+tid=0x00000056b120c800
+Thread stack address = [0x0000000000000000]
+Thread id = #4
+Thread state = RUNNABLE
+Stack trace : 
+================================================
+Thread name = Finalizer
+prio=8
+tid=0x00000056b11f6800
+Thread stack address = [0x00000056b1fcf000]
+Thread id = #3
+Thread state = WAITING (on object monitor)
+Stack trace : 
+at java.lang.Object.wait(Native Method)
+at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+- locked <0x0000000080e03f58> (a java.lang.ref.ReferenceQueue$Lock)
+at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+at java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+================================================
+Thread name = Reference Handler
+prio=10
+tid=0x00000056b0ac4000
+Thread stack address = [0x00000056b1ecf000]
+Thread id = #2
+Thread state = WAITING (on object monitor)
+Stack trace : 
+at java.lang.Object.wait(Native Method)
+at java.lang.Object.wait(Unknown Source)
+at java.lang.ref.Reference.tryHandlePending(Unknown Source)
+- locked <0x0000000080e01f80> (a java.lang.ref.Reference$Lock)
+at java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+================================================
+Thread name = main
+prio=5
+tid=0x000000569a673800
+Thread stack address = [0x000000569bfcf000]
+Thread id = #1
+Thread state = RUNNABLE
+Stack trace : 
+at LongString.createString(HeapDumpAna.java:36)
+at HeapDumpAna.main(HeapDumpAna.java:12)
+================================================
+Thread name = VM Thread
+tid=0x00000056b11d5000
+Thread state = runnable
+================================================
+Thread name = GC task thread#0 (ParallelGC)
+tid=0x000000569a689000
+Thread state = runnable
+================================================
+Thread name = GC task thread#1 (ParallelGC)
+tid=0x000000569a68a000
+Thread state = runnable
+================================================
+Thread name = GC task thread#2 (ParallelGC)
+tid=0x000000569a68c800
+Thread state = runnable
+================================================
+Thread name = GC task thread#3 (ParallelGC)
+tid=0x000000569a68f000
+Thread state = runnable
+================================================
+Thread name = VM Periodic Task Thread
+tid=0x00000056b12b8000
+Thread state = waiting
+================================================

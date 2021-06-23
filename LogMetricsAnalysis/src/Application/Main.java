@@ -17,12 +17,28 @@ public class Main {
 
 	public static void main(String [] args) {
 		
-		System.out.print("Enter file path : ");
 		Scanner sca = new Scanner(System.in);
-		//readBinToText(sca.nextLine());
-		ThreadDumpRead thr = new ThreadDumpRead(sca.nextLine());
+
+		System.out.println("1 - Thread dump file | 2 - Heap dump file");
+		System.out.print("Option :- ");
+		int option = Integer.parseInt(sca.nextLine());
 		
-		thr.readFile();
+		//readBinToText(sca.nextLine());
+		System.out.print("Enter file path : ");
+
+		if(option == 1) {
+			ThreadDumpRead thr = new ThreadDumpRead(sca.nextLine());
+			thr.readFile();
+
+		}else if(option == 2) {
+			GcDumpRead gcdr = new GcDumpRead(sca.nextLine());
+			gcdr.readFile();
+		}else {
+			System.out.println("Option not specified.......");
+		}
+		
+
+		
 	}
 	
 	public static void readBinToText(String file) {

@@ -3,6 +3,7 @@ package Application;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -130,29 +131,52 @@ public class ThreadDumpRead {
 			
 			System.out.println("Print thread details");
 			
-				threadDetails.forEach(i->{
-					//System.out.println(i.toString());
-					System.out.println("=================================");
-					i.forEach(j->{
-						if(j.length()>0) {
-							System.out.print(j);
-						}
-					});
-					System.out.println("=================================");
-
-				});
+//				threadDetails.forEach(i->{
+//					//System.out.println(i.toString());
+//					System.out.println("=================================");
+//					i.forEach(j->{
+//						if(j.length()>0) {
+//							System.out.print(j);
+//						}
+//					});
+//					System.out.println("=================================");
+//
+//				});
 				
-				for(int i = 0;i<threadDetails.size();i++) {
+//				for(int i = 0;i<threadDetails.size();i++) {
+//					
+//					
+//					System.out.println("==========================================");
+//					System.out.println("Thread count : "+(i+1));
+//					
+//					for(int j=0;j<threadDetails.get(i).size();j++) {
+//						System.out.print(threadDetails.get(i).get(j));
+//					}
+//					System.out.println("==========================================");
+//
+//				}
+//				
+				File output = new File("thread_dump_summary.txt");
+				FileWriter fw = new FileWriter(output);
+				
+				
+				if(threadDetails.size()>0) {
 					
-					
-					System.out.println("==========================================");
-					System.out.println("Thread count : "+(i+1));
-					
-					for(int j=0;j<threadDetails.get(i).size();j++) {
-						System.out.print(threadDetails.get(i).get(j));
-					}
-					System.out.println("==========================================");
+					for(int i=0;i<threadDetails.size();i++) {
+						
+						for(int j=0;j<threadDetails.get(i).size();j++) {
+							//System.out.println(gcLogLineList.get(i).get(j));
 
+							fw.write(threadDetails.get(i).get(j));
+							
+						}
+						fw.write("================================================\n");
+						fw.flush();
+						
+						
+					}
+					
+					System.out.println(threadDetails.size());
 				}
 			
 			System.out.println("end reading thread dump file");
