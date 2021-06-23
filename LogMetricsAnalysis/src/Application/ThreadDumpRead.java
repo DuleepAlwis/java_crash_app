@@ -177,6 +177,29 @@ public class ThreadDumpRead {
 					}
 					
 					System.out.println(threadDetails.size());
+				threadDetails.forEach(i->{
+					//System.out.println(i.toString());
+					System.out.println("=================================");
+					i.forEach(j->{
+						if(j.length()>0) {
+							System.out.print(j);
+						}
+					});
+					System.out.println("=================================");
+
+				});
+				
+				for(int i = 0;i<threadDetails.size();i++) {
+					
+					
+					System.out.println("==========================================");
+					System.out.println("Thread count : "+(i+1));
+					
+					for(int j=0;j<threadDetails.get(i).size();j++) {
+						System.out.print(threadDetails.get(i).get(j));
+					}
+					System.out.println("==========================================");
+
 				}
 			
 			System.out.println("end reading thread dump file");

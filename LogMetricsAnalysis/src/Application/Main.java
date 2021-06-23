@@ -37,6 +37,13 @@ public class Main {
 			System.out.println("Option not specified.......");
 		}
 		
+
+		System.out.print("Enter file path : ");
+		Scanner sca = new Scanner(System.in);
+		//readBinToText(sca.nextLine());
+		ThreadDumpRead thr = new ThreadDumpRead(sca.nextLine());
+		
+		thr.readFile();
 	}
 	
 	public static void readBinToText(String file) {

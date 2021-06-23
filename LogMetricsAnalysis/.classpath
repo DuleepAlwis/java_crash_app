@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+<<<<<<< HEAD
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="E:/heap_analyzis/java_heap_analisis/java_crash_app/LogMetricsAnalysis/lib/commons-codec-1.15.jar"/>
+>>>>>>> 6d2c1b340c052afcf021d552e4f7c85a12ef46cc
 	<classpathentry kind="output" path="bin"/>
 </classpath>
