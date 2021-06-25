@@ -19,7 +19,7 @@ public class Main {
 		
 		Scanner sca = new Scanner(System.in);
 
-		System.out.println("1 - Thread dump file | 2 - Heap dump file | 3 - PS log file\n"
+		System.out.println("1 - Thread dump file | 2 - GC log file | 3 - PS log file\n"
 				+ "4 - VMStat file | 5 - NetStat file | 6 - Dmesg file");
 		System.out.print("Option :- ");
 		int option = Integer.parseInt(sca.nextLine());
