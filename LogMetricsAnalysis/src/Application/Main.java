@@ -19,7 +19,7 @@ public class Main {
 		
 		Scanner sca = new Scanner(System.in);
 
-		System.out.println("1 - Thread dump file | 2 - Heap dump file");
+		System.out.println("1 - Thread dump file | 2 - Heap dump file | 3 - PS log file");
 		System.out.print("Option :- ");
 		int option = Integer.parseInt(sca.nextLine());
 		
@@ -33,6 +33,10 @@ public class Main {
 		}else if(option == 2) {
 			GcDumpRead gcdr = new GcDumpRead(sca.nextLine());
 			gcdr.readFile();
+		}else if(option == 3) {
+			LinuxLog linuxLog = new LinuxLog(sca.nextLine());
+			//linuxLog.readPsFile();
+			linuxLog.getPs();
 		}else {
 			System.out.println("Option not specified.......");
 		}
