@@ -34,8 +34,8 @@ public class Main {
 		}else if(option == 2) {
 			GcDumpRead gcdr = new GcDumpRead(sca.nextLine());
 			
-			System.out.println("Type of GC performed : \n"+"1: Parallel GC 2: G1GC");
-			gcdr.readFileSelect(Integer.parseInt(sca.nextLine()));
+			//System.out.print("Type of GC performed : \n"+"1: Parallel GC for Java 8 and below 2: G1GC for Java 9 and above : ");
+			gcdr.readFileSelect();
 			
 		}else if(option == 3) {
 			LinuxLog linuxLog = new LinuxLog(sca.nextLine());
