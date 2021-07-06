@@ -18,7 +18,7 @@ public class GcDumpRead {
 	private String filePath;
 	
 	public GcDumpRead() {
-		
+		 
 	}
 	
 	public GcDumpRead(String file) {
@@ -42,7 +42,7 @@ public class GcDumpRead {
 			}
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			// TODO Auto-generated catch block 
 			e.printStackTrace();
 		}
 		

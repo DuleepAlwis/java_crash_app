@@ -19,7 +19,7 @@ public class LinuxLog {
 	private String filePath;
 	
 	public LinuxLog() {
-		
+		 
 	}
 	
 	public LinuxLog(String file) {

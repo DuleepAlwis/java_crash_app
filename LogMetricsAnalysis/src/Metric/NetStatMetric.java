@@ -12,7 +12,7 @@ public class NetStatMetric {
 	private String state;
 	
 	public NetStatMetric() {
-		super();
+		super(); 
 		// TODO Auto-generated constructor stub
 	}
 
