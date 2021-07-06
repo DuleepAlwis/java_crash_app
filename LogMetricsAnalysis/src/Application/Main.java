@@ -19,7 +19,8 @@ public class Main {
 		
 		Scanner sca = new Scanner(System.in);
 
-		System.out.println("1 - Thread dump file | 2 - Heap dump file | 3 - PS log file");
+		System.out.println("1 - Thread dump file | 2 - GC log file | 3 - PS log file\n"
+				+ "4 - VMStat file | 5 - NetStat file | 6 - Dmesg file");
 		System.out.print("Option :- ");
 		int option = Integer.parseInt(sca.nextLine());
 		
@@ -32,11 +33,29 @@ public class Main {
 
 		}else if(option == 2) {
 			GcDumpRead gcdr = new GcDumpRead(sca.nextLine());
-			gcdr.readFile();
+			
+			//System.out.print("Type of GC performed : \n"+"1: Parallel GC for Java 8 and below 2: G1GC for Java 9 and above : ");
+			gcdr.readFileSelect();
+			
 		}else if(option == 3) {
 			LinuxLog linuxLog = new LinuxLog(sca.nextLine());
-			//linuxLog.readPsFile();
-			linuxLog.getPs();
+			linuxLog.readPsFile();
+			//linuxLog.getPs();
+		}else if(option == 4){
+			LinuxLog linuxLog = new LinuxLog(sca.nextLine());
+			
+			linuxLog.readVmStatFile();
+			
+		}else if(option == 5){
+			LinuxLog linuxLog = new LinuxLog(sca.nextLine());
+			
+			linuxLog.readNetStatFile();
+			
+		}else if(option == 6){
+			LinuxLog linuxLog = new LinuxLog(sca.nextLine());
+			
+			linuxLog.readDMesg();
+			
 		}else {
 			System.out.println("Option not specified.......");
 		}
